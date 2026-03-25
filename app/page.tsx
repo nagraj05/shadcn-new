@@ -194,7 +194,7 @@ const DOT_COLORS = [
   "bg-rose-400", "bg-cyan-400", "bg-fuchsia-400", "bg-orange-400",
 ];
 
-const STATUS_CONFIG: Record<LibraryStatus, { icon: React.ElementType; color: string; label: string }> = {
+const STATUS_CONFIG: Record<LibraryStatus, { icon: React.ComponentType<{ className?: string }>; color: string; label: string }> = {
   "useful":         { icon: ThumbsUp,      color: "text-emerald-400", label: "Useful" },
   "not-useful":     { icon: ThumbsDown,    color: "text-rose-400",    label: "Not useful" },
   "not-maintained": { icon: AlertTriangle, color: "text-amber-400",   label: "Not maintained" },
